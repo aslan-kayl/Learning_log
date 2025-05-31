@@ -13,6 +13,10 @@ import os
 import dj_database_url
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 from django.conf.global_settings import LOGIN_URL
 
@@ -24,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-^e5k@mq8vv_hl&3mz+@gxj=x$4lm0=h03m+97%jvaz7t_j0-%=')
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
@@ -81,9 +85,7 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='postgres://aslan:123@localhost:5432/learning_log_db'
-    )
+    'default': dj_database_url.config(default=os.getenv("DATABASE_URL"))
 }
 
 
