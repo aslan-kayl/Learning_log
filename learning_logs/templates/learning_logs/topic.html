@@ -8,6 +8,9 @@
     <a href="{% url 'learning_logs:new_entry' topic.id %}">add new entry</a>
 </p>
 {% for entry in entries %}
+{% if topic.public %}
+<p><em>This is a public topic.</em></p>
+{% endif %}
 <div class="card mb-3">
     <h4 class="card-header">
         {{ entry.date_added|date:'M d, Y H:i' }}
