@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef2ca24f-1bb2-4c31-b3cb-732fa0af8550" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/public_topics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_log/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_log/templates/500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/new_entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/new_entry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/render.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

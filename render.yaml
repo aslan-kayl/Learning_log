@@ -1,0 +1,22 @@
+databases:
+  - name: my_db
+    plan: free
+    databaseName: learning_log_db_i0km
+    user: aslan
+
+services:
+  - type: web
+    plan: free
+    name: Learning_log
+    runtime: python
+    buildCommand: './build.sh'
+    startCommand: 'python -m gunicorn learning_log.asgi:application -k uvicorn.workers.UvicornWorker'
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: learning_log_db_i0km
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
